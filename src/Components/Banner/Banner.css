@@ -1,0 +1,62 @@
+
+/* src/components/Banner.css */
+.BigBanner {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: var(--banner-height, 450px);
+    /* Adjustable height using CSS variable */
+    /* margin-left: 5%; */
+    /* Left margin of 5% */
+    /* margin-right: 5%; */
+    /* Right margin of 5% */
+    padding: 0px;
+    /* Optional: padding for the banner */
+    overflow: hidden;
+    /* Ensures the image does not overflow the container */
+}
+
+.banner {
+    width: 100%;
+    /*Makethebanneroccupytherestofthespace*/height: 100%;
+    /*Ensuretheimagecoversthecontainerproportionally*//*object-fit: cover;
+    *//*Ensurestheimagecoversthecontainerproportionally*/border-radius: 10px;
+    /*Optional:;
+    roundedcornersfortheimage*/box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /*Optional: shadow effect for the image */;
+    -webkit-border-radius: 5px;
+    
+}
+
+/* Additional styles to match the colors from the image */
+.banner-title {
+    color: #FFFFFF;
+    /* White text color */
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.banner-subtitle {
+    color: #A6E0F2;
+    /* Light Blue text color */
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.order-button {
+    background-color: #EE2C36;
+    /*BrightRedbackgroundcolor*/color: #FFFFFF;
+    /*Whitetextcolor*//*padding: 10px 10px;
+    */border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* -webkit-border-radius:; */
+    /* -moz-border-radius:; */
+    /* -ms-border-radius:; */
+    /* -o-border-radius:; */
+}
+
+.order-button:hover {
+    background-color: #EC4B7B;
+    /* Pink hover color */
+}

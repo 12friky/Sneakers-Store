@@ -1,0 +1,83 @@
+/* Testimony.css */
+
+.testimony-container {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.testimony-header {
+    color: #7B192E;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.testimony-subheader {
+    color: #9e9e9e;
+    font-size: 1em;
+    margin-bottom: 2em;
+}
+
+.testimony-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.testimony-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    width: 250px;
+    position: relative;
+    overflow: hidden;
+    /* Add this line */
+}
+
+.testimony-card .quote {
+    color: #7B192E;
+    font-size: 70px;
+    position: absolute;
+    top: 10;
+    left: 0.5em;
+}
+
+.testimony-card .text {
+    color: #757575;
+    font-size: 0.9em;
+    margin: 1.5em 0;
+}
+
+.testimony-card .profile {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.testimony-card .profile img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.testimony-card .profile-info {
+    text-align: left;
+}
+
+.testimony-card .name {
+    color: #424242;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.testimony-card .social {
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.testimony-card .social a {
+    color: #6a1b9a;
+    font-size: 1.2em;
+}

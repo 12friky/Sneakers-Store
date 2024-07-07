@@ -1,0 +1,142 @@
+.MainCombo {
+    /* margin: 5%; */
+    height: 10rem;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+}
+
+.carousel {
+    display: flex;
+    /* overflow-x: scroll; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    width: 100%;
+    gap: 3rem;
+    padding: 40px;
+}
+
+.Box1 {
+    width: 21rem;
+    height: 10rem;
+    background-color: #ffff;
+    display: flex;
+    box-shadow: 1px 0px 5px rgba(61, 54, 54, 0.5);
+    position: relative;
+    margin-right: 10px;
+    /* Add some spacing between boxes */
+    flex-shrink: 0;
+    /* Prevents boxes from shrinking */
+}
+
+.ImageCombo {
+    display: flex;
+    /*align-items: center;
+     */
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.slidImage {
+    width: 200px;
+    height: 200px;
+    margin-left: -40px;
+    margin-top: -25px;
+}
+
+.DesciptionBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 1rem;
+}
+
+.Stars {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}
+
+.SnaekerName {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.numberOfColurs {
+    margin: 0;
+    color: rgb(54, 50, 50);
+    font-size: 15px;
+}
+
+.sneakerPrice {
+    margin: 0;
+    color: #4a1621;
+    font-weight: bold;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.PlusBtn {
+    position: absolute;
+    top: 7rem;
+    left: 18rem;
+    border: none;
+    padding: 15px;
+    color: #ffff;
+    background-color: #4a1621;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.PlusBtn:hover {
+    background-color: #ffffff;
+    color: #4a1621;
+    box-shadow: 1px 0px 5px rgba(61, 54, 54, 0.5);
+}
+
+.arrow {
+    font-size: 1.5rem;
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: #4a1621;
+    padding: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.arrow:hover {
+    background-color: #ffffff;
+    color: #4a1621;
+    box-shadow: 1px 0px 5px rgba(61, 54, 54, 0.5);
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+.OurCollection
+{
+    margin-left:5%;
+    font-size: 30px;
+    font-weight: bold;
+}

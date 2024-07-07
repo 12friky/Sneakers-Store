@@ -1,0 +1,132 @@
+.MenCollection {
+    padding: 5px;
+}
+
+.ProductSection {
+    margin-bottom: 10px;
+}
+
+.SectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.SectionHeader h2 {
+    margin: 0;
+}
+
+.SectionHeader a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.ProductGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ProductCard {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 5px;
+    width: calc(20% - 20px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.ProductCard img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.ProductInfo {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.ProductInfo h3 {
+    margin: 10px 0 5px;
+    font-size: 1rem;
+}
+
+.ProductInfo p {
+    margin: 0;
+    color: #555;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.buttonBtn {
+    display: flex;
+    gap: 80px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.AddToCartButton {
+    padding: 10px 15px;
+    background-color: #7B192E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.AddToCartButton:hover {
+    background-color: #0056b3;
+}
+
+.FavoriteButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #ff0000;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .ProductCard {
+        width: calc(25% - 20px);
+    }
+}
+
+@media (max-width: 992px) {
+    .ProductCard {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .ProductCard {
+        width: calc(50% - 20px);
+    }
+
+    .buttonBtn {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .ProductCard {
+        width: calc(100% - 20px);
+    }
+
+    .buttonBtn {
+        flex-direction: row;
+        gap: 150px;
+    }
+}

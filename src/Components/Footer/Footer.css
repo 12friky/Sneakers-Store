@@ -1,0 +1,184 @@
+.footer {
+    background: #000;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    margin-top: 5%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 5%;
+    flex-wrap: wrap;
+    /* Ensure elements wrap on smaller screens */
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    min-width: 250px;
+    /* Minimum width for each section */
+}
+
+.footer-section.about h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-section.about h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-section.links h2,
+.footer-section.subscribe h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-section.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section.links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section.links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section.links ul li a:hover {
+    color: orange;
+}
+
+.footer-section.subscribe .subscribe-form {
+    display: flex;
+    align-items: center;
+}
+
+.footer-section.subscribe input[type='email'] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.footer-section.subscribe .subscribe-btn {
+    padding: 10px 20px;
+    border: none;
+    background: orange;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    /* Ensure elements wrap on smaller screens */
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.scroll-up {
+    font-size: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: orange;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .footer-content {
+        flex-direction: row;
+        /* Keep sections in a row until the next breakpoint */
+        flex-wrap: wrap;
+        /* Allow wrapping */
+    }
+
+    .footer-section {
+        flex: 1 1 45%;
+        /* Allow sections to take up to 45% width */
+        margin-bottom: 20px;
+        /* Add space between rows */
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        /* Stack items vertically */
+        text-align: left;
+        /* Align text to the left */
+    }
+
+    .social-icons {
+        justify-content: flex-start;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        /* Stack sections vertically */
+        align-items: flex-start;
+        /* Align items to the start */
+    }
+
+    .footer-section {
+        text-align: left;
+        /* Align text to the left */
+        padding: 10px 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        /* Stack items vertically */
+        text-align: left;
+        /* Align text to the left */
+    }
+
+    .social-icons {
+        justify-content: flex-start;
+        margin-bottom: 10px;
+    }
+
+    .scroll-up {
+        position: static;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .footer-section.about h1,
+    .footer-section.about h2,
+    .footer-section.links h2,
+    .footer-section.subscribe h2 {
+        font-size: 18px;
+    }
+
+    .footer-section.subscribe input[type='email'] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer-section.subscribe .subscribe-btn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,214 @@
+.BigBanners {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    /* Make sure this height matches the height of your images */
+    overflow: hidden;
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Images {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the container without distortion */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* Ensure the image is behind other elements */
+}
+
+.Descriptions {
+    position: relative;
+    left: 5%;
+    top: 2%;
+    z-index: 1;
+    /* Ensures the text is above the background image */
+    color: white;
+}
+
+.h3Decriptions {
+    color: #fff;
+    font-size: 70px;
+    margin: 0;
+}
+
+.ProductQuote {
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.shopNow {
+    background: #fff;
+    border: none;
+    padding: 15px;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #7B192E;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.shopNow:hover {
+    background-color: #e5e5e5;
+}
+
+.VideoReview {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.FaFilmIcon {
+    margin-right: 10px;
+    color: white;
+}
+
+.WatchLink {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.WatchLink:hover {
+    text-decoration: underline;
+}
+
+.SneakersImage {
+    width: 700px;
+    /* Adjust as needed */
+    height: auto;
+    position: relative;
+    right: 5%;
+    z-index: 1;
+    /* Ensures the image is above the background image */
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .h3Decriptions {
+        font-size: 60px;
+    }
+
+    .ProductQuote {
+        font-size: 20px;
+    }
+
+    .shopNow {
+        font-size: 18px;
+        padding: 12px;
+        width: 180px;
+    }
+
+    .WatchLink {
+        font-size: 18px;
+    }
+
+    .SneakersImage {
+        width: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .h3Decriptions {
+        font-size: 50px;
+    }
+
+    .ProductQuote {
+        font-size: 18px;
+    }
+
+    .shopNow {
+        font-size: 16px;
+        padding: 10px;
+        width: 160px;
+    }
+
+    .WatchLink {
+        font-size: 16px;
+    }
+
+    .SneakersImage {
+        width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .BigBanners {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .Descriptions {
+        left: 5%;
+        top: 10px;
+    }
+
+    .SneakersImage {
+        position: relative;
+        right: auto;
+        margin-top: 20px;
+        width: 160px;
+    }
+
+    .h3Decriptions {
+        font-size: 40px;
+    }
+
+    .ProductQuote {
+        font-size: 16px;
+    }
+
+    .shopNow {
+        font-size: 14px;
+        padding: 8px;
+        width: 140px;
+    }
+
+    .WatchLink {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .BigBanners {
+        width: 100%;
+        margin: 0;
+    }
+
+    .Descriptions {
+        left: 10px;
+        top: 5px;
+    }
+
+    .SneakersImage {
+        width: 140px;
+    }
+
+    .h3Decriptions {
+        font-size: 30px;
+    }
+
+    .ProductQuote {
+        font-size: 14px;
+    }
+
+    .shopNow {
+        font-size: 12px;
+        padding: 6px;
+        width: 120px;
+    }
+
+    .WatchLink {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,140 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #f2f2f2;
+}
+
+.login-box {
+    display: flex;
+    width: 1000px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-left {
+    flex: 1;
+    padding: 40px;
+    background-color:#7B192E;
+    color: #fff;
+    border-radius: 10px 0 0 10px;
+ 
+}
+
+.login-left h2 {
+    margin-bottom: 20px;
+}
+
+.login-left form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.input-group input {
+    padding: 10px 10px 10px 35px;
+    /* Adjust padding for the icon */
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    width: 100%;
+}
+
+.login-left .login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.login-left .login-options a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.login-left button {
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.login-right {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 10px 10px 0;
+}
+
+.social-login {
+    text-align: center;
+}
+
+.social-login span {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.sneaker-image {
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.social-btn {
+    width: 90px;
+    height: 90px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.login-right p {
+    font-size: 14px;
+    color: #333;
+}
+
+.login-right a {
+    color: #9a67ea;
+    text-decoration: underline;
+}
